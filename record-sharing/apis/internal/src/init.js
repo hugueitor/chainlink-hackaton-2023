@@ -6,15 +6,15 @@ export var web3
 var contractData
 export var vars = {
     account_from : {
-        publicKey  : "0x64748A0805Fe8A231a224bF206ad2726c6542A26",
-        privateKey : "0xdd021861c3d7fa2c42d65f00ecb02ed7784359d9768b55b3eb09b7a394b5e3a7",
+        publicKey  : "0xC78c3BeA1e4fBBdAfBe5178A09EDD72ff2814a9d",
+        privateKey : "0x03d1ac8de34cfc4688bb6dcf3d5c1346e6e3c386dbb581303c323338006a34c8",
     },
     besu_node : {
         url        : "http://192.168.8.133:7545"
     },
     contractAbi    : "",
-    contractAccount: "0x64748A0805Fe8A231a224bF206ad2726c6542A26",
-    contractAddress: "0xabD841b2ac331C19b68C6a9b02a22F5b297a7744",
+    contractAccount: "0xC78c3BeA1e4fBBdAfBe5178A09EDD72ff2814a9d",
+    contractAddress: "0xD6BA555Add4f6E809ff3B558a4F2c6eF55e20a1E",
     contractName   : "AclService",
 };
 

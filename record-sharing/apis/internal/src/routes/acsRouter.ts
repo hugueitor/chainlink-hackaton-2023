@@ -41,12 +41,12 @@ export const setup = (root: string, app: Express) => {
 	router.get('/api/getDocumentStruct',      asyncMiddleware(sampleController.getDocumentStruct));
 
 	/* Writers */
-	router.post('/api/createUser',          asyncMiddleware(sampleController.createUser));
-	router.post('/api/removeUser',          asyncMiddleware(sampleController.removeUser));
-	router.post('/api/addAccessControl',    asyncMiddleware(sampleController.addAccessControl));
-	router.post('/api/updateAccessControl', asyncMiddleware(sampleController.updateAccessControl));
-	router.post('/api/deleteAccessControl', asyncMiddleware(sampleController.deleteAccessControl));
-	router.post('/api/createDocument',      asyncMiddleware(sampleController.createDocument));
+	router.post('/api/createUser',            asyncMiddleware(sampleController.createUser));
+	router.post('/api/removeUser',            asyncMiddleware(sampleController.removeUser));
+	router.post('/api/addAccessControl',      asyncMiddleware(sampleController.addAccessControl));
+	router.post('/api/updateAccessControl',   asyncMiddleware(sampleController.updateAccessControl));
+	router.post('/api/deleteAccessControl',   asyncMiddleware(sampleController.deleteAccessControl));
+	router.post('/api/createDocument',        asyncMiddleware(sampleController.createDocument));
 
 	router.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 		console.error(err);

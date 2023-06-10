@@ -12,6 +12,8 @@ export const echo = (req: Request, res: Response) => {
 }
 
 /* Readers */
+
+// replace any for string
 export const auth = async (req: Request, res: Response) => {
 	console.log(req.body);
 	const _account: any = req.query.account;
@@ -64,12 +66,12 @@ export const getDocumentStruct = async (req: Request, res: Response) => {
 /* Writers */
 export const createUser = async (req: Request, res: Response) => {
 	console.log(req.body);
-	const _account: string = req.body.account;	
+	const _account:   string = req.body.account;	
 	const _createdBy: string = req.body.createdBy;	
-	const _login: string = req.body.login;	
-	const _password: string = req.body.password;	
-	const _pke2: string = req.body.pke2;	
-	const _user_id: string = req.body.user_id;	
+	const _login:     string = req.body.login;	
+	const _password:  string = req.body.password;	
+	const _pke2:      string = req.body.pke2;	
+	const _user_id:   string = req.body.user_id;	
 	const result = await sm.putToContract("createUser", _account, _createdBy, _login, _password, _pke2, _user_id);
 	return res.json(result);
 }
@@ -83,11 +85,11 @@ export const removeUser = async (req: Request, res: Response) => {
 	
 export const addAccessControl = async (req: Request, res: Response) => {
 	console.log(req.body);
-	const _ac_id: string = req.body.ac_id;
-	const _accessType: string = req.body.accessType;
-	const _account: string = req.body.account;
-	const _crypted_AES: string = req.body.crypted_AES;
-	const _document_id: string = req.body.document_id;
+	const _ac_id:              string = req.body.ac_id;
+	const _accessType:         string = req.body.accessType;
+	const _account:            string = req.body.account;
+	const _crypted_AES:        string = req.body.crypted_AES;
+	const _document_id:        string = req.body.document_id;
 	const _document_signature: string = req.body.document_signature;
 	const result = await sm.putToContract("addAccessControl", _ac_id, _accessType, _account, _crypted_AES, _document_id, _document_signature);
 	return res.json(result);
@@ -95,11 +97,11 @@ export const addAccessControl = async (req: Request, res: Response) => {
 
 export const updateAccessControl = async (req: Request, res: Response) => {
 	console.log(req.body);
-	const _ac_id: string = req.body.ac_id;
-	const _accessType: string = req.body.accessType;
-	const _account: string = req.body.account;
-	const _crypted_AES: string = req.body.crypted_AES;
-	const _document_id: string = req.body.document_id;
+	const _ac_id:              string = req.body.ac_id;
+	const _accessType:         string = req.body.accessType;
+	const _account:            string = req.body.account;
+	const _crypted_AES:        string = req.body.crypted_AES;
+	const _document_id:        string = req.body.document_id;
 	const _document_signature: string = req.body.document_signature;	
 	const result = await sm.putToContract("updateAccessControl",  _ac_id, _accessType, _account, _crypted_AES, _document_id, _document_signature);
 	return res.json(result);
@@ -114,9 +116,9 @@ export const deleteAccessControl = async (req: Request, res: Response) => {
 
 export const createDocument = async (req: Request, res: Response) => {
 	console.log(req.body);
-	const _owner: string = req.body.owner;
+	const _owner:       string = req.body.owner;
 	const _document_id: string = req.body.document_id;
-	const _signature: string = req.body.signature;
+	const _signature:   string = req.body.signature;
 	const result = await sm.putToContract("createDocument", _owner, _document_id, _signature, "", "", "");
 	return res.json(result);
 }

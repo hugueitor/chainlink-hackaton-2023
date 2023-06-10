@@ -3,9 +3,10 @@ const PrivateKeyProvider = require("@truffle/hdwallet-provider");
 //const PrivateKeyProvider = require("/home/hugo/.nvm/versions/node/v18.16.0/lib/node_modules/@truffle/hdwallet-provider/");
 
 // Ganache
-const privateKey = "dd021861c3d7fa2c42d65f00ecb02ed7784359d9768b55b3eb09b7a394b5e3a7"
+const privateKey = "03d1ac8de34cfc4688bb6dcf3d5c1346e6e3c386dbb581303c323338006a34c8"
 
 const host = "192.168.8.133"
+//const host = "127.0.0.1"
 const port = "7545"
 
 const url = "http://" + host + ":" + port
