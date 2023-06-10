@@ -1,5 +1,3 @@
-<!-- title: Instructions for use --> 
-
 # Aurium - authorization scheme
 
 # About this project
@@ -13,7 +11,8 @@
 
 **This project** is intended to create an authorization scheme for users and their multiple files that they want to keep stored on an off-chain server, while encrypted and made sure that key information is stored in the blockchain. 
 
-~~This project is found in the [Chainlink Hackathon devpost.](https://www.google.com)~~
+### The architecture of the scheme
+
 
 ## Overall scheme
 
@@ -50,11 +49,5 @@ A user will pass through the following steps in order to ensure a correct use of
 7. The application stores the hash of the data and its location.
 8. The data may be downloaded for use by an allowed user (may them be a writer or reader). For this, the data must be decrypted using the Owner's public key.
 
-### Technical information (code processes)
 
-The smart contract is called upon with Postman, with the following steps:
-
-1. The API is called upon, which waits for transactions from a User. Postman will simulate these transactions.
-2. The API then calls the smart contract through Postman.
-3. Postman calls the address through the API made specifically for this project. 
 
