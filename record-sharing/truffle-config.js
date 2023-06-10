@@ -1,9 +1,9 @@
-//const PrivateKeyProvider = require("@truffle/hdwallet-provider");
+const PrivateKeyProvider = require("@truffle/hdwallet-provider");
 //const PrivateKeyProvider = require("/usr/local/lib/node_modules/@truffle/hdwallet-provider");
-const PrivateKeyProvider = require("/home/hugo/.nvm/versions/node/v18.16.0/lib/node_modules/@truffle/hdwallet-provider/");
+//const PrivateKeyProvider = require("/home/hugo/.nvm/versions/node/v18.16.0/lib/node_modules/@truffle/hdwallet-provider/");
 
 // Ganache
-const privateKey = "cf6cf5f293452e3231e4fb683ba0f5003c8c5767e924ff9c8440e723923dcdf4"
+const privateKey = "dd021861c3d7fa2c42d65f00ecb02ed7784359d9768b55b3eb09b7a394b5e3a7"
 
 const host = "192.168.8.133"
 const port = "7545"
@@ -27,8 +27,6 @@ module.exports = {
     },
     compilers: {
         solc: {
-//            version: "0.5.1"
-//            version: "^0.8.0"
             version: "^0.7.0"
         }
     }    

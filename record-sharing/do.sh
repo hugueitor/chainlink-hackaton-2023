@@ -1,4 +1,6 @@
 clear
+echo "Clearing previous build"
+rm -rf build
 echo "Compile..."
 truffle compile
 echo "Migrate..."

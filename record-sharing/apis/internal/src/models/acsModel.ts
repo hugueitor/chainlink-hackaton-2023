@@ -5,6 +5,8 @@
 
 import * as init from '../init';
 
+const toBytes = (string: WithImplicitCoercion<string> | { [Symbol.toPrimitive](hint: "string"): string; }) => Array.from(Buffer.from(string, 'utf8'));
+
 /* Readers */
 export async function getFromContract(method: string, param1: string, param2: string) {
     console.log("getFromContract> START");

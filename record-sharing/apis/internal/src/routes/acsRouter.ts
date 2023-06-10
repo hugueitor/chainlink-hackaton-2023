@@ -49,7 +49,7 @@ export const setup = (root: string, app: Express) => {
 	router.post('/api/createDocument',      asyncMiddleware(sampleController.createDocument));
 
 	router.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-		//logger.error(err);
+		console.error(err);
 		res.status(500).json(err.message);
 	});
 
