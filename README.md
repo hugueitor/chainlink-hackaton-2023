@@ -1,5 +1,3 @@
-# Borrame ... no chingues!
-
 # Aurium - authorization scheme
 
 # About this project
