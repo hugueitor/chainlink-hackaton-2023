@@ -1,8 +1,6 @@
-# Aurium - authorization scheme
+# Aurium: an authorization scheme for users willing to share sensible data securely
 
-# About this project
-
-## Participants
+# Participants
 
 - Hugo Bustamante
 - Gabriel Bustamante
@@ -17,9 +15,9 @@ This project is intended to create an authorization scheme for users and their m
 
 ## Overall scheme
 
-### Owners of files can grant/revoke access to their files for users under different roles
+## Owners of files can grant/revoke access to their files for users under different roles
 
-**This project** portrays a form of granting or revoking access to certain files that a user (Owner) may have in their power. The Owner of certain files would have the following properties for their files:
+This project portrays a form of granting or revoking access to certain files that a user (Owner) may have in their power. The Owner of certain files would have the following properties for their files:
 
 - Privacy and security.
 - Access control.
@@ -28,7 +26,6 @@ This project is intended to create an authorization scheme for users and their m
 
 The following languages have been used for this project:
 
-- Bash.
 - Solidity.
 - JavaScript (for Node.js).
 - Json.
@@ -38,7 +35,7 @@ The environments used for guidance and testing the smart contract deployment:
 - Truffle.
 - Ganache.
 
-### Procedure
+# Procedure
 
 A user will pass through the following steps in order to ensure a correct use of the application:
 1. Users must be registered in the application to generate and store keys (both public and private). The user will need to determine which role they will have (be it an Owner, a writer or a reader of files).
