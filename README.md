@@ -7,9 +7,9 @@
 - Hugo Bustamante
 - Gabriel Bustamante
 
-## Description
+# Description
 
-**This project** is intended to create an authorization scheme for users and their multiple files that they want to keep stored on an off-chain server, while encrypted and made sure that key information is stored in the blockchain. 
+This project is intended to create an authorization scheme for users and their multiple files (or data) that they would want to keep stored on an off-chain server, while encrypting it, and made sure that key information associated with that data is stored in the Ethereum blockchain. 
 
 # The architecture and interactions of the scheme
 ![architecture](https://github.com/hugueitor/chainlink-hackaton-2023/assets/48810531/5722eb7e-9a6d-427a-b4e9-bad7ab80aab9)
