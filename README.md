@@ -13,7 +13,7 @@ This project is intended to create an authorization scheme for users and their m
 ![architecture](https://github.com/hugueitor/chainlink-hackaton-2023/assets/48810531/5722eb7e-9a6d-427a-b4e9-bad7ab80aab9)
 
 
-## Overall scheme
+# Overall scheme
 
 ## Owners of files can grant/revoke access to their files for users under different roles
 
