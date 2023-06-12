@@ -58,7 +58,7 @@ git clone https://github.com/hugueitor/chainlink-hackaton-2023
 
 ```bash
 
-cd record-sharing
+cd chainlink-hackaton-2023/record-sharing
 
 ```
 
