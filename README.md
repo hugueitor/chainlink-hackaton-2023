@@ -5,6 +5,10 @@
 - Hugo Bustamante
 - Gabriel Bustamante
 
+# Chainlink Hackathon Submission
+
+Submission link [Chainlink Hackathon](https://devpost.com/software/aurium-authorization-scheme)
+
 # Description
 
 This project is intended to create an authorization scheme for users and their multiple files (or data) that they would want to keep stored on an off-chain server, while encrypting it, and made sure that key information associated with that data is stored in the Ethereum blockchain. Thus, this project portrays a form of granting or revoking access to certain files that a user (Owner) may have in their power. The Owner of certain files would have the following properties for their files:
