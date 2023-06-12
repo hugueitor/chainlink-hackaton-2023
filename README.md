@@ -42,6 +42,82 @@ A user will pass through the following steps in order to ensure a correct use of
 7. The application stores the hash of the data and its location.
 8. The data may be downloaded for use by an allowed user (may them be a writer or reader). For this, the data must be decrypted using the Owner's public key.
 
+# The technical process to use this process
+
+1. Clone Github repository.
+
+```bash
+
+$ git clone https://github.com/hugueitor/chainlink-hackaton-2023
+
+```
+
+2. Start Ganache application.
+
+3. Change to record-sharing directory.
+
+```bash
+
+$ cd record-sharing
+
+```
+
+4. Update variables 1-env.sh file with Ganache parameters.
+
+- Edit file 1-env.sh and change the following environment variables.
+
+```sh
+
+AURIUM_PUBLIC_KEY=    <Public Key (1st Account)>
+AURIUM_PRIVATE_KEY=   <Private Key (1st Account)>
+AURIUM_NODE_URL=      <Node-RPC URL>
+
+```
+
+- Then, apply changes.
+
+```bash
+
+$ . ./1-env.sh
+
+```
+
+4. Install main Smart Contract in blockchain network.
+
+```bash
+
+$ ./2-run-install-smart-contract.sh
+
+```
+
+5. From migration output get "Contract address" for "AccessControlService.sol" contract and 
+update 1-env.sh with that value.
+
+```sh
+
+AURIUM_CONTRACT_ADDRESS=   <Contract address result of migration>
+
+```
+
+- Then, apply changes.
+
+```bash
+
+$ . ./1-env.sh
+
+```
+
+6. Run API for contract interaction.
 
 
+```bash
 
+$ ./3-run-nodejs-api.sh
+
+```
+
+7. Start Postman for testing transactions.
+
+8. Import collection in Postman.
+
+9. Enjoy our API.
