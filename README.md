@@ -48,7 +48,7 @@ A user will pass through the following steps in order to ensure a correct use of
 
 ```bash
 
-$ git clone https://github.com/hugueitor/chainlink-hackaton-2023
+git clone https://github.com/hugueitor/chainlink-hackaton-2023
 
 ```
 
@@ -58,7 +58,7 @@ $ git clone https://github.com/hugueitor/chainlink-hackaton-2023
 
 ```bash
 
-$ cd record-sharing
+cd record-sharing
 
 ```
 
@@ -78,7 +78,7 @@ AURIUM_NODE_URL=      <Node-RPC URL>
 
 ```bash
 
-$ . ./1-env.sh
+. ./1-env.sh
 
 ```
 
@@ -86,7 +86,7 @@ $ . ./1-env.sh
 
 ```bash
 
-$ ./2-run-install-smart-contract.sh
+./2-run-install-smart-contract.sh
 
 ```
 
@@ -103,7 +103,7 @@ AURIUM_CONTRACT_ADDRESS=   <Contract address result of migration>
 
 ```bash
 
-$ . ./1-env.sh
+. ./1-env.sh
 
 ```
 
@@ -112,7 +112,7 @@ $ . ./1-env.sh
 
 ```bash
 
-$ ./3-run-nodejs-api.sh
+./3-run-nodejs-api.sh
 
 ```
 
