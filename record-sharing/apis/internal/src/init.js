@@ -15,7 +15,7 @@ export var vars = {
     contractAbi    : "",
     contractAccount: process.env.AURIUM_PUBLIC_KEY,
     contractAddress: process.env.AURIUM_CONTRACT_ADDRESS,
-    contractName   : "AclService",
+    contractName   : "AccessControlService",
 };
 
 export const initVars = async () => {

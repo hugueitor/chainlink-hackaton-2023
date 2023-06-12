@@ -1,11 +1,4 @@
-/**
- * @author Hugo A. Bustamante
- * @description
- */
-
 import * as init from '../init';
-
-// const toBytes = (string: WithImplicitCoercion<string> | { [Symbol.toPrimitive](hint: "string"): string; }) => Array.from(Buffer.from(string, 'utf8'));
 
 /* Readers */
 export async function getFromContract(method: string, param1: string, param2: string) {
@@ -180,74 +173,3 @@ export async function putToContract(method: string,
     };
     return transaction();  
 }
-
-/* 
-export async function createDocument2( 
-                                    param1: string, 
-                                    param2: string, 
-                                    param3: string) {
-    console.log("createDocument2> START");
-    
-    // console.log("typeof(param1): ", typeof(param1));
-    // console.log("typeof(param2): ", typeof(param2));
-    // console.log("typeof(param3): ", typeof(param3));
-
-    const web3 = init.web3
-    const contractAbi        = init.vars.contractAbi;
-    const contractAccount    = init.vars.account_from.publicKey;
-    const contractPrivateKey = init.vars.account_from.privateKey;
-    const contractAddress    = init.vars.contractAddress;
-
-    console.log("putToContract2> web3.version      : ", web3.version);
-    //console.log("putToContract2> contractAbi       : ", contractAbi);
-    console.log("putToContract2> contractAccount   : ", contractAccount);
-    console.log("putToContract2> contractprivateKey: ", contractPrivateKey);
-    console.log("putToContract2> contractAddress   : ", contractAddress);
-
-    // Contract Tx
-    const contract = new web3.eth.Contract(contractAbi);
-
-    var encoded = "";
-
-    console.log(`putToContract2> Calling 'createDocument2' ('${param1}', '${param2}', '${param3}') function in contract at address '${contractAddress}'`);
-
-    let _owner       = param1;
-    let _document_id = param2;
-    let _signature   = param3;
-    // console.log("typeof(_owner)      : ", typeof(_owner));
-    // console.log("typeof(_document_id): ", typeof(_document_id));
-    // console.log("typeof(_signature)  : ", typeof(_signature));
-
-    console.log(`putToContract2> Converted 'createDocument2' ('${_owner}', '${_document_id}', '${_signature}') function in contract at address '${contractAddress}'`);
-
-    encoded = contract.methods.createDocument2(_owner, _document_id, _signature).encodeABI();
-
-    console.log("encoded: ", encoded)
-
-    const transaction = async () => {
-        try {
-            const createTransaction = await web3.eth.accounts.signTransaction(
-                {
-                    from: contractAccount,
-                    to: contractAddress,
-                    data: encoded,
-                    gas: '4700000'
-                },
-                contractPrivateKey
-            );
-            console.log("putToContract2> createTransaction:\n", createTransaction);
-    
-            const createReceipt = await web3.eth.sendSignedTransaction(
-                createTransaction.rawTransaction
-            );
-            console.log(`putToContract2> Tx successfull with hash: '${createReceipt.transactionHash}'`);
-            return createReceipt.transactionHash;
-        } catch (err) {
-            console.error("putToContract2> ERROR:\n", err);
-            console.log("putToContract2> returning NULL");
-            return null;
-        }
-    };
-    return transaction();  
-} 
-*/

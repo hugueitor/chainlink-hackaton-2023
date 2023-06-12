@@ -1,8 +1,3 @@
-/**
- * @author Hugo A. Bustamante
- * @description Sample Router controller
- */
-
 import { Request, Response } from 'express';
 import * as sm from '../models/acsModel';
 

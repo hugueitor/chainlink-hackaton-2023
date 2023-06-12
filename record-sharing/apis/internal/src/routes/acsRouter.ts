@@ -1,8 +1,3 @@
-/**
- * @author Hugo A. Bustamante
- * @description Expressjs API router
- */
-
 // Libs imports
 import { Express, Request, Response, NextFunction, Router } from 'express';
 import * as sampleController from '../controllers/acsController';
