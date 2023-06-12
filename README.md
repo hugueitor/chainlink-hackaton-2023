@@ -42,7 +42,7 @@ A user will pass through the following steps in order to ensure a correct use of
 7. The application stores the hash of the data and its location.
 8. The data may be downloaded for use by an allowed user (may them be a writer or reader). For this, the data must be decrypted using the Owner's public key.
 
-# The technical process to use scheme
+# The technical process 
 
 1. Clone Github repository.
 
