@@ -118,6 +118,8 @@ $ ./3-run-nodejs-api.sh
 
 7. Start Postman for testing transactions.
 
-8. Import collection in Postman.
+8. Import collection file in Postman.
+
+- FILE: record-sharing/postman/Chainlink-Hackaton-2023.postman_collection.json
 
 9. Enjoy our API.
